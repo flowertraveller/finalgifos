@@ -241,9 +241,10 @@ header p {
             display: inline-flex;
             justify-items: flex-start;
             margin-top: 12px;
-            #example, #example1, #example2 {						
+            #example, #example1, #example2 {	
+                			
                 position: relative;
-                display: inline-flex;
+                display: none;
                 justify-items: flex-start;
                 height: 34px;
                 width: fit-content;

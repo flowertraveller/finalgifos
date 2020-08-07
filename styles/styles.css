@@ -762,9 +762,7 @@ header p {
 
 .btnSearchResults #example, .btnSearchResults #example1, .btnSearchResults #example2 {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: none;
   justify-items: flex-start;
   height: 34px;
   width: -webkit-fit-content;

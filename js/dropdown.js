@@ -10,6 +10,9 @@ function displayDropable() {
      document.getElementById("search-bar-input-place").addEventListener('input', autocomplete);
      function autocomplete(){
       let auto = document.getElementsByClassName('auto'); 
+      document.getElementById('example').style.display = "block";
+      document.getElementById('example1').style.display = "block";
+      document.getElementById('example2').style.display = "block";
       let keyword = document.getElementById('search-bar-input-place').value;
       let keywordClean = keyword.replace('','+')
       const apikey = 'IqeMD59NavOyu6it77HFJvw67npZMlvh'
@@ -31,17 +34,21 @@ function displayDropable() {
    document.getElementsByClassName('auto')[5].addEventListener('click',autoSearch);
   
  
- 
+   
    function autoSearch(){
     document.getElementById('search-bar-input-place').value = this.innerHTML;
     search();       
     toggleDropdownSearchContent();
     displayHidden();
+   
      }
      function toggleDropdownSearchContent(){
         document.getElementById('dropdownSearchContent').style.display = "none";
+       
+       
     }
    document.getElementsByClassName('auto').addEventListener('click', toggleDropdownSearchContent());
+  
    
 
     
