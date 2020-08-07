@@ -1,0 +1,118 @@
+.day {
+ background-color: rgb(255,244,253);
+  header, .search-bar-sign {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    header {
+       box-shadow: 0 1px 0 0 $border2;
+    }  
+  }
+  .nav-menu-misguifos {
+    color: $border2;
+  } 
+  .button {
+    background: $sailor-day-primary;
+    border: 1px solid $border2;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $input-color;
+    color: $border2;
+    a {
+      color: $border2;
+    }
+  }
+ #choose-list p{
+  background: #f0f0f0;
+  
+ } 
+ .search-bar {
+    background-color: $background-search-bar-day;
+    box-shadow: inset -2px -2px 0 0 $box-shadow, inset 2px 2px 0 0 $input-color;
+  }
+  .search-button {
+    background: $background-search-bar-day;
+    span {
+    color: $box-shadow;
+  }
+  }
+  .suggested-title {
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  }
+ 
+  .item{
+      background: $background-search-bar-day;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $input-color;
+    } 
+  .item2 {
+      background: $background-search-bar-day;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $input-color;
+    } 
+  .item3{
+      background: $background-search-bar-day;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $input-color;
+    } 
+  /* dropdown*/ 
+  .dropdownSearchContent {
+    background: $background-search-bar-day;
+  }
+  .dropdownContent {
+  background: $background-search-bar-day;
+  box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $input-color;
+  h2 {
+    color: $border2;
+    background: #f0f0f0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 $input-color;
+  }
+  h2:hover {
+    background: #fff4fd;
+    border: 1px solid #cca6c9;
+  }
+  .dropdownContent:hover {
+    box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 $input-color;
+    color: $border2;
+  }
+ }
+ /* SUGGESTED GIFS*/ 
+ .headergif{ 
+  background-image: linear-gradient(270deg, $sailor-day-primary 0%, #4180f6 100%);
+ }
+ .suggested-button {
+  background-color: #4180F6;
+  color: $input-color;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 $input-color;
+  border: 1px solid #4C2F99;
+ }
+  /* TRENDING GIFS*/ 
+ .headergifTrending {
+    background-image: linear-gradient(270deg, $sailor-day-primary 0%, #4180f6 100%);
+  }
+ /* BRING SEARCH */ 
+ .headerSearch {
+  background-image: linear-gradient(270deg, $sailor-day-primary 0%, #4180f6 100%);
+ }
+ /* CREATE */
+
+ .capture-button {
+  #startRecord {
+    background: #F7C9F3;
+    border: 1px solid $border2;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  }
+  #startRecord:active{
+    background: #FF6161;
+      border: 1px solid $border2;
+      box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  }
+  #stopRecording {
+    background: #F7C9F3;
+    border: 1px solid $border2;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  }
+  #stopRecording:active{
+    background: #FF6161;
+    border: 1px solid $border2;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  }
+ }
+
+}

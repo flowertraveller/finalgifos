@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/gifOF_logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/styles.css" > 
+    <link rel="stylesheet" href="styles/_sailor_day.css">  
+    <link rel="stylesheet" href="styles/_sailor_night.css" > 
+    <title>GifOS</title>
+</head>
+<body class="day" id="theme">
+ 
+    <header>
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+ <div class="main-content">
+
+    <section class="create-gifos-section">
+            <div class="nav-menu">
+                <a href="index.html"><img class="arrow" src="./assets/arrow.svg" alt=""><img id="img-logo" src="./assets/gifOF_logo.png" alt="logo"></a>
+            </div>
+           <div class = "create-gifos-panel">
+              <p class="create-gifos-p">Crear Guifos</p> 
+                <div class="create-gifos-alert">
+                    <div class="window-img"><img src="./assets/window_img.png" alt=""></div>
+                <div>
+                    <p class="create-gifos-title">Aquí podrás crear tus propios guifos</p>
+                <div class="create-gifos-items">
+                    <p>Crear tu <span class="create-gifos-items-bold">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados.
+                        Los pasos para crear tu guifo son:</p>
+                    <br>
+                
+                        <p><span class="black">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                        <br>
+                        <p><span class="black">2) </span>Capturar tu momento guifo</p>
+                        <br>
+                        <p><span class="black">3)</span> Revisar el momento</p>
+                        <br>
+                        <p><span class="black">4)</span> Listo para subir y compartir!</p>
+                        <br>
+                        <p><span class="black"></span>¿Quieres comenzar a crear tu <span class="create-gifos-items-bold">guifo </span>ahora</p>
+                   
+            </div> 
+            
+              <div class="create-gifos-buttons">
+                    <a href="index.html"><div class="capture-gif-button cancel"><span>Cancelar</span></div></a>
+                    <div class="capture-gif-button confirm" onclick="camaraOn()"><span>Comenzar</span></div>
+              </div></div></div> 
+         </div>
+    </section>
+
+    <section class="record-gifos-panel-sec">
+      
+            <p class="record-gifos-p"><span id="record-panel-title">Un chequeo antes de empezar</span> <img class='close' src="./assets/close.svg" alt="close"></p>
+             <div class="video-gifos-panel">
+                <video src="video" id="video" autoplay ></video>
+                <div class="gif-preview-container"><img id="gif-preview" alt="preview" src="video"></div>
+            </div>
+   
+        <div class="capture-button">
+            <button id='startRecord' class="capture-gif-button confirm" onclick="startRecording()"><img     class="camera-button"  src="./assets/camera.svg" alt="camera"><span>Capturar</span></button>
+            <button class="capture-gif-button stop" onclick="stopRecording()"><img class="camera-button" src="./assets/recording.svg" alt="recording"><span>Listo</span></button>
+
+       
+            <div class="btns-upload-gif">
+                <div id="timer"></div>
+                  <div class="buffer-bar"><img src="./assets/forward.svg" alt="forward" class="forward">
+                    <div class="buffer">
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                        <div class="buffer-bar-item"></div>
+                    </div>
+                </div>
+                <button class="capture-gif-button repeat push" onclick="location.href='create.html'"><span>Repetir
+                    Captura</span></button>
+                <button class="capture-gif-button upload" id="upload"><span>Subir Guifo</span></button>
+            </div>
+         </div>
+    </section>
+
+       
+    
+      <div class="misguifos">   <!-- ojo lo nombres de estos contenedores-->
+                    <div class="suggested-title">Mis Guifos: </div>
+                    <div id= "mygifos"></div>
+        </div>
+      
+        <div class="gifos-saved">
+            <div class="suggested-title">Guifos guardados: </div>
+            <div id="savedgifos"></div>
+        </div>
+
+</div>
+    <script src="./js/bringresults.js"></script>
+    <script src="./js/dropdown.js"></script>  
+    <script src="./js/recordgifos.js"></script> 
+    <script src="./js/searchresults.js"></script> 
+    <script src="./js/script.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</body>
+</html>

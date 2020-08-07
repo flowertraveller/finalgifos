@@ -1,0 +1,121 @@
+.night {
+ background-color: rgb(17,0,56);
+  header, .search-bar-sign {
+    background-image: linear-gradient(270deg, $sailor-night-primary 0%, #2E32FB 100%);
+    header  {
+      box-shadow: 0 1px 0 0 $border2;
+    }
+  }    
+  .nav-menu-misguifos {
+    color: $input-color;
+  } 
+  .button {
+    background: $sailor-night-primary;
+    border: 1px solid $border2;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 $input-color;
+    color: $input-color;
+    a {
+      color: $input-color;
+    }
+  } 
+  #choose-list p:hover {
+    background: #2E32FB;
+    color: $input-color;
+  } 
+  .search-bar {
+    background: $box-shadow;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    }
+   .search-button {
+    background: $box-shadow;
+    span {
+    color: #8F8F8F;
+  }
+  }
+  .suggested-title {
+    background: #FFFFFF;
+    border: 1px solid $border3;
+    box-shadow: inset -2px -2px 0 0 $background-search-bar-day, inset 2px 2px 0 0 #000000
+  }
+
+  .item{
+      background: $box-shadow;
+      box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 $input-color;
+    } 
+  .item2{
+      background: $box-shadow;
+      box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 $input-color;
+    } 
+  .item3{
+      background: $box-shadow;
+      box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 $input-color;
+    }
+    /* dropdown*/ 
+    .dropdownSearchContent {
+      background: $box-shadow;
+    }
+    .dropdownContent {
+      background: #b4b4b4;
+      box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+      h2 {
+        color: $border2;
+        background-color: #cccccc;
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+      }
+      .dropdownContent:hover {
+        box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+      }
+      h2:hover {
+        color: #33358f6b 20%;
+        background: #2e32fb;
+        border: 1px solid rgba(51, 53, 143, 0.2);
+      }
+    }  
+  /* SUGGESTED GIFS*/ 
+ .headergif { 
+    background-image: linear-gradient(270deg, $sailor-night-primary 0%, #2E32FB 100%);
+  }
+  .suggested-button {
+    background-color: #2E32FB;
+    color: $input-color;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 $input-color;
+    border: 1px solid #4C2F99;
+  }
+   /* TRENDING GIFS*/ 
+  .headergifTrending {
+    background-image: linear-gradient(270deg, $sailor-night-primary 0%, #2E32FB 100%);
+  }
+  /* BRING SEARCH */
+  .headerSearch {
+    background-image: linear-gradient(270deg, $sailor-night-primary 0%, #2E32FB 100%);
+  }
+
+   /* CREATE */
+  .capture-button {
+    #startRecord{
+      background: #EE3EFE;
+      border: 1px solid $border2;
+      box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    }
+    #startRecord:active{
+      background: #FF6161;
+        border: 1px solid $border2;
+        box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    }
+    #stopRecording {
+      background: #EE3EFE;
+      border: 1px solid $border2;
+      box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+      h2 {
+        color: $border2;
+      }
+    }
+    #stopRecording:active{
+      background: #FF6161;
+      border: 1px solid $border2;
+      box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    }
+  }
+}
+

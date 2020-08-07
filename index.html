@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/gifOF_logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/styles.css" > 
+    <link rel="stylesheet" href="styles/_sailor_day.css">  
+    <link rel="stylesheet" href="styles/_sailor_night.css" > 
+
+    <title>GifOS</title>
+</head>
+<body class="day" id="theme">
+    <header>
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.//////Número de visitas: 12.765.803
+    </header>
+    <div class="main-content">
+        <nav class= "nav-menu">
+            <img id="img-logo" src="./assets/gifOF_logo.png" alt="logo">
+                
+            <div class="nav-menu-btn">
+                <div class="button" id="create">
+                    <a href="create.html" class="button-create-html"><span>Crear Guifos</span></a>
+                </div>   
+                <div class="button-choose-theme">
+                 <ul> 
+                    <li> <div class="button" id ="elegir"><span>Elegir tema</span></div><div class="button"     id="dropdown"><span><img src="./assets/dropdown.svg" alt="dropdown"></span></div>
+                    </li>
+                        <ul><div id="choose-list">
+                            <p class="sailor-day" onclick="day()"><span class="underline">S</span>ailor Day</p>
+                            <p class="sailor-night" onclick="night()"><span class="underline">S</span>ailor Night</p></div>
+                        </ul>
+                </ul>
+                </div>
+                    <a class ="nav-menu-misguifos" href="misgifos.html">
+                        <span class="underline">M</span><span>is Guifos</span>
+                    </a>  
+            </div>
+        </nav>
+    
+        <section class="search-bar">
+            <div class="search-bar-sign">
+                    <p>Buscar</p>
+            </div>
+            <form class="search-bar-input" id="search-bar-input">
+                <input class="search-bar-input-place" id="search-bar-input-place"  name="search-bar-input-place"  value=""  autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" onclick="displayHidden()" >
+                <button type="submit" class="search-button" id="search-button">
+                 <span class="search-bar-button"><img id="lupa" src="./assets/lupa_inactive.svg" alt="lupa" />
+                    <span>  Buscar</span>   
+                </span>
+                </button>
+            </form>
+
+         <div id="dropdownSearchContent" class="dropdownSearchContent">
+                <div id="searchResult1" class="auto"></div>
+                <div id="searchResult2" class="auto"></div>
+                <div id="searchResult3" class="auto"></div>
+         </div>
+         <div id="showSearchResults" class="dropableButtons"  >
+            <div id="btnSearchResults" class="btnSearchResults">
+              <a href="" id="example"  class="auto"></a>
+              <a href="" id="example1"  class="auto"></a>
+              <a href="" id="example2" class="auto"></a>              
+            </div>
+          </div>
+        </section>
+    
+        <div class="suggested-bar">
+            <div class="suggested-title">Hoy te sugerimos: </div>
+            <div id="suggested-input" ></div>
+        </div>
+       
+        <div class="trendings">
+            <div class="suggested-title">Tendencias: </div>
+            <div id= "bringtrending"></div>
+        </div>
+        
+        <div id="bringresults"  class="bringresults">
+            <div class="suggested-title">Resultados de busqueda </div>
+        <div class="results" id="results" > </div>
+        </div>
+    </div>
+        
+        
+  
+    <script src="./js/script.js"></script>   
+    <script src="./js/bringresults.js"></script>
+    <script src="./js/dropdown.js"></script>  
+    <script src="./js/recordgifos.js"></script> 
+    <script src="./js/searchresults.js"></script> 
+</body>
+</html>
